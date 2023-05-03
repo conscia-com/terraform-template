@@ -23,3 +23,15 @@ locals {
   region        = lookup(local.env, "${terraform.workspace}_region")
   account_id    = lookup(local.env, "${terraform.workspace}_account_id")
 }
+
+# terraform workspace select training
+# terraform plan -var-file="training.tfvars"
+
+# terraform plan
+# -- will read terraform.tfvars 
+
+variable "hello" { default = "use -var-file=training.tfvars" }
+
+output "hello" {
+  value = var.hello
+}
