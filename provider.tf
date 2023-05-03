@@ -1,10 +1,10 @@
 provider "aws" {
   assume_role {
-    external_id = "terraform"
+    external_id  = "terraform"
     session_name = "terraform"
-    role_arn = "arn:aws:iam::${local.account_id}:role/terraform"
+    role_arn     = "arn:aws:iam::${local.account_id}:role/terraform"
   }
-  region = "${local.region}"
+  region = local.region
 }
 
 
