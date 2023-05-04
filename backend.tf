@@ -9,7 +9,7 @@ terraform {
   */
   /*
   backend "s3" {
-    bucket = "s3://<accountid>-<project>-terraform-state"
+    bucket = "<accountid>-<project>-terraform-state"
     key = "terraform.tfstate"
     region = "eu-west-1"
     external_id = "terraform"
