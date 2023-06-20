@@ -1,5 +1,12 @@
 terraform {
-  required_version = "<=1.3.9"
+  required_version = "<=1.5.0"
+  required_providers {
+
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 5.4.0"
+    }
+  }
   /*
   awsume training
   aws s3 mb s3://<accountid>-<project>-terraform-state
