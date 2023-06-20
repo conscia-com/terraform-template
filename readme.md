@@ -1,6 +1,6 @@
 ## init
 
-    tfswitch 1.3.9
+    tfswitch
     terraform init
     awsume iam
 
